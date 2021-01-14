@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+<!--Employee-->
+<div class="container-fluid">
+    <h3 class="text-center pt-3 pb-3 blur">Bảng Quản Lý Employee</h3>
+    <div class="">
+        <button type="button" class="btn btn-primary mb-3" data-toggle="modal" data-target="#employee">Thêm mới</button>
+    </div>
+    <table class="table table-bordered table-hover table-light">
+        <thead class=bg_tb>
+        <tr>
+            <th>ID</th>
+            <th>Họ Tên</th>
+            <th>Mức Lương</th>
+            <th>Ngày sinh</th>
+            <th>Số điện thoại</th>
+            <th>Địa chỉ</th>
+            <th>Phòng ban</th>
+            <th>Số thẻ căn cước</th>
+            <th>Ảnh đại diện</th>
+            <th>Active</th>
+            <th></th>
+            <th></th>
+        </tr>
+        </thead>
+        <tr>
+            <td>1</td>
+            <td>Linh Nhi</td>
+            <td>100000</td>
+            <td>1243</td>
+            <td>02343434</td>
+            <td>hihi</td>
+            <td>n01</td>
+            <td>039485</td>
+            <td>IMG</td>
+            <td>active</td>
+            <td style="width: 5%"><a href="#" class="btn btn-warning"><i class="fa fa-edit"></i></a></td>
+            <td style="width: 5%"><a href="#" class="btn btn-danger"><i class="fa fa-trash"></i></a></td>
+        </tr>
+    </table>
+</div>
+<!--modal them mới-->
+<div class="modal fade" id="employee" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title font-weight-bold color_modal">Thêm mới employee</h3>
+                <button type="button" data-dismiss="modal" class="close">x</button>
+            </div>
+            <form action="" method="post">
+                <div class="modal-body">
+                    <div class="container-fluid bg_modal">
+                        <div class="form-group row pt-3">
+                            <label class="col-lg-2">Họ tên</label>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control pt-3" placeholder="Họ tên" required>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-2">Mức lương</label>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" placeholder="Mức lương" required>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-2">Ngày sinh</label>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" placeholder="Ngày sinh" required>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-2">Số điện thoại</label>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" placeholder="Số điện thoại" required>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-2">Địa chỉ</label>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" placeholder="Địa chỉ" required>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-2">Phòng ban</label>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" placeholder="Phòng ban" required>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-2">Thẻ căn cước</label>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" placeholder="Thẻ căn cước" required>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-2">Ảnh đại điện</label>
+                            <div class="col-lg-10">
+                                <input type="file" class="form-control" required>
+                            </div>
+                        </div>
+                        <div class="form-group row pb-4">
+                            <label class="col-lg-2">Active</label>
+                            <div class="col-lg-6">
+                                <input type="datetime-local" class="form-control">
+                            </div>
+                            <div class="col-lg-1">
+                                <input type="checkbox" class="form-control" required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <input type="submit" class="btn btn-primary" value="Thêm mới">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Huỷ</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

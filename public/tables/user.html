@@ -1,0 +1,180 @@
+<!--Còn phần chi tiêt từng bảng-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body class="bg-light">
+<div class="container-fluid bgr_nav">
+    <div class="row">
+        <div class="col-lg-2 col-md-12 text-center"> <a href="#">
+            <h1>Logo</h1>
+        </a></div>
+            <nav class="col-lg-7 col-md-10 pr-0 navbar navbar-expand-lg justify-content-center">
+                <div class="">
+                    <ul class="nav color mr-auto ml-5">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">User</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="employee.html">Employee</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="timesheet.html">TimeSheet</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="salary.html">Salary</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ensument.html">Ensument</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="department.html">Department</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="reward.html">Reward</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="report.html">Report</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </nav>
+
+        <div class="col-lg-3 col-md-2 text-right d-flex align-items-center">
+            <a href="login.html" class="mr-4">Đăng nhập</a>
+            <a href="signup.html">Đăng kí</a>
+        </div>
+    </div>
+</div>
+<h2 class="text-center pt-3 pb-3 blur">Bảng Quản Lý User</h2>
+<div class="card">
+    <div class="card-body">
+            <div class="row">
+                <div class="col-lg-10">
+                    <button type="button" class="btn btn-primary mb-3" data-toggle="modal" data-target="#themmoi">Thêm mới</button>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-md-2">
+                    <form action="" method="get">
+                        <div class="input-group">
+
+                            <input type="text" name="seach_account" value="" class="form-control bg-light border-1 small"
+                                   placeholder="Tìm kiếm..." aria-label="Search">
+
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="submit">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <table class="table table-bordered table-hover table-light">
+                <thead class=bg_tb>
+                <tr>
+                    <th>Id</th>
+                    <th>User name</th>
+                    <th>Email</th>
+                    <th>Password</th>
+                    <th>Role</th>
+                    <th>Employee_id</th>
+                    <th>Active</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tr>
+                    <td><a href="detail_user.html">1</a></td>
+                    <td>Linh Nhi</td>
+                    <td>linhnhi99123</td>
+                    <td>1243</td>
+                    <td>hihi</td>
+                    <td>12</td>
+                    <td>Active</td>
+                    <td style="width: 5%"><a href="#" class="btn btn-warning"><i class="fa fa-edit"></i></a></td>
+                    <td style="width: 5%"><a href="#" class="btn btn-danger"><i class="fa fa-trash"></i></a></td>
+                </tr>
+            </table>
+        </div>
+</div>
+<!--modal them mới-->
+<div class="modal fade" id="themmoi" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title font-weight-bold color_modal">Thêm mới user</h3>
+                <button type="button" data-dismiss="modal" class="close">x</button>
+            </div>
+            <form action="" method="post">
+                <div class="modal-body">
+                    <div class="container-fluid bg_modal">
+                        <div class="form-group row pt-4">
+                            <label class="col-lg-2">ID</label>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control pt-3" placeholder="ID" required>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-2">User name</label>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control pt-3" placeholder="User name" required>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-2">E-mail</label>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control pt-3" placeholder="E-mail" required>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-2">Password</label>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control pt-3" placeholder="Password" required>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-2">Role</label>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control pt-3" placeholder="Role" required>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-2">Employee_id</label>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control pt-3" placeholder="Employee_id" required>
+                            </div>
+                        </div>
+                        <div class="form-group row pb-4">
+                            <label class="col-lg-2">Active</label>
+                            <div class="col-lg-1">
+                                <input type="checkbox" class="form-control pt-3" placeholder="Active" required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <input type="submit" class="btn btn-primary" value="Thêm mới">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Huỷ</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

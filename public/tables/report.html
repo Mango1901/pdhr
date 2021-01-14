@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Report</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+<body class="bg-light">
+<!--Timre sheet-->
+<h3 class="text-center pt-3 pb-3 blur">Bảng Quản Lý Report</h3>
+<div class="card">
+    <div class="card-body">
+        <div class="row">
+            <label class="col-lg-1">Tháng/Năm</label>
+            <div class="col-lg-2">
+                <input type="month">
+            </div>
+            <label class="col-lg-1">Từ</label>
+            <div class="col-lg-2">
+                <input type="date">
+            </div>
+            <label class="col-lg-1">Tới</label>
+            <div class="col-lg-3">
+                <input type="date">
+            </div>
+            <div class="col-lg-2 col-md-4 mb-md-2">
+                <form action="" method="get">
+                    <div class="input-group">
+
+                        <input type="text" name="seach_account" value="" class="form-control bg-light border-1 small"
+                               placeholder="Tìm kiếm..." aria-label="Search">
+
+                        <div class="input-group-append">
+                            <button class="btn btn-primary" type="submit">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <table class="table table-bordered">
+            <tr class="bg_tb">
+                <th rowspan="2" style="line-height: 60px;">STT</th>
+                <th rowspan="2" style="line-height: 60px;">Họ Tên</th>
+                <th rowspan="2" style="line-height: 60px;">Level</th>
+                <th rowspan="2" style="line-height: 60px;">Thời gian</th>
+                <th colspan="3" class="text-center">Lương khác</th>
+                <th colspan="3" class="text-center">Thưởng</th>
+                <th rowspan="2" style="line-height: 60px;">Lương</th>
+            </tr>
+            <tr class="bg_tb">
+                <th>tiêu đề 1</th>
+                <th>tiêu đề 2</th>
+                <th>tiêu đề 3</th>
+                <th>tiêu đề 4</th>
+                <th>tiêu đề 5</th>
+                <th>tiêu đề 6</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td><a href="#" data-toggle="modal" data-target="#profile">Nhi baby cute</a></td>
+                <td>hihi</td>
+                <td><a href="#" data-toggle="modal" data-target="#time">12:00</a></td>
+                <td>hố hố</td>
+                <td>hố hố</td>
+                <td>hố hố</td>
+                <td>hố hố</td>
+                <td>hố hố</td>
+                <td>hố hố</td>
+                <td>1000</td>
+            </tr>
+        </table>
+    </div>
+</div>
+<!--modal them mới-->
+<div class="modal fade" id="time" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title font-weight-bold color_modal">Thời gian</h3>
+                <button type="button" data-dismiss="modal" class="close">x</button>
+            </div>
+            <form action="" method="post">
+                <div class="modal-body">
+                    <div class="container-fluid">
+                       <div class="form-group row pt-3">
+                           <label class="col-lg-2">Họ tên</label>
+                           <div class="col-lg-6">Lê Thị Linh Nhi</div>
+                           <label class="col-lg-1">Tháng</label>
+                           <div class="col-lg-3">
+                               <input type="text" class="">
+                           </div>
+                       </div>
+                        <table class="table table-bordered">
+                            <thead class="bg_tb">
+                            <tr>
+                                <th>STT</th>
+                                <th>Họ tên</th>
+                                <th>Check in</th>
+                                <th>Check out</th>
+                            </tr>
+                            </thead>
+                            <tr>
+                                <td>1</td>
+                                <td>Linh Nhi</td>
+                                <td>1:30 21.11</td>
+                                <td>12:09 23.11</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Huỷ</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="profile" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title font-weight-bold color_modal">Thông tin</h3>
+                <button type="button" data-dismiss="modal" class="close">x</button>
+            </div>
+            <form action="" method="post">
+                <div class="modal-body">
+                    <div class="container-fluid bg_modal">
+                        <div class="form-group row pt-3">
+                            <label class="col-lg-2">Họ tên</label>
+                            <div class="col-lg-10">
+                                Nhi baby cute
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-2">Mức lương</label>
+                            <div class="col-lg-10">
+                                10000 dollars
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-2">Ngày sinh</label>
+                            <div class="col-lg-10">
+                                15/10/1999
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-2">Số điện thoại</label>
+                            <div class="col-lg-10">
+                                0383791971
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-2">Địa chỉ</label>
+                            <div class="col-lg-10">
+                                Thanh Hoá
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-2">Phòng ban</label>
+                            <div class="col-lg-10">
+                                H&D
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-2">Thẻ căn cước</label>
+                            <div class="col-lg-10">
+                                0393459
+                            </div>
+                        </div>
+                        <div class="form-group row pb-4">
+                            <label class="col-lg-2">Active</label>
+                            <div class="col-lg-10">
+                               active
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Huỷ</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
+</body>
+</body>
+</html>
